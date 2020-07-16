@@ -2,6 +2,7 @@
 // (as mesmas chaves) do primeiro e os seguintes valores:
 // "Tio Patinhas", "Christmas on Bear Mountain, Dell's Four Color Comics #178",
 // "O último MacPatinhas", "Sim".
+// imprimir ao final "Ambos recorrentes" (Atenção para essa última linha!)
 
 
 let info1 = {
@@ -15,10 +16,14 @@ let info2 = {
     personagem: "Tio Patinhas",
     origem: "Chistmas on Bear Mountain",
     nota: "Dell's Four Color Comics #178",
-    MacPatinhas: "Sim",
+    MacPatinhas: "sim",
   };
 
 console.log(info1.personagem + " e " + info2.personagem);
 console.log(info1.origem + " e " + info2.origem);
 console.log(info1.nota + " e " + info2.nota);
-console.log(info1.recorrente + " e " + info2.MacPatinhas);
+// console.log(info1.recorrente + " e " + info2.MacPatinhas);
+
+if (info1.recorrente === info2.MacPatinhas){
+  console.log("Ambos recorrentes");
+}
