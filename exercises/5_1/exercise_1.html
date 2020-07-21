@@ -55,7 +55,8 @@
         function descricao() {
             let doisAnos = document.getElementsByTagName('p')[0];
             doisAnos.innerHTML = 'Cássio daqui dois anos como um desenvolvedoer de sucesso!'
-        } descricao();
+        }
+        descricao();
 
         function corDoQuadradoAmarelo() {
             let verdeTrybe = document.getElementsByClassName('main-content')[0];
@@ -81,6 +82,14 @@
         }
         textoMaiusculo();
 
+        function todasTag() {
+            let tags = document.getElementsByTagName('p');
+            for (let i = 0; i < tags.length; i += 1) {
+                console.log(tags[i].innerHTML);
+            }
+        }
+        todasTag();
+        
     </script>
   </body>
 </html>
