@@ -86,7 +86,22 @@
       img1.src = 'https://picsum.photos/200';
       tagDiv3.appendChild(img1);
 
-      
+      let listaUL = document.createElement('ul');
+      listaUL.appendChild(tagDiv4);
+      let arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+      for (let i in arrayNumbers) {
+      let listaLi = document.createElement('li');
+      listaLi.innerHTML = arrayNumbers[i];
+      listaUl.appendChild(listaLi);
+      }
+
+      for (let j = 1; j <= 3; j += 1) {
+        let tresTagsH3 = document.createElement('h3');
+        tresTagsH3.innerHTML = 'Trigêmeas' + j;
+        tagDiv1.appendChild(tresTagsH3);
+      }
+
+
     </script>
   </body>
 </html>
