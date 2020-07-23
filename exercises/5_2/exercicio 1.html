@@ -63,15 +63,15 @@
       document.body.appendChild(tagH1);
       
       let tagDiv1 = document.createElement('div');
-      tagDiv.className = 'main-content';
-      document.boby.appendChild(tagDiv1);
+      tagDiv1.className = 'main-content';
+      document.body.appendChild(tagDiv1);
 
       let tagDiv2 = document.createElement('div');
       tagDiv2.className = 'center-content';
       tagDiv1.appendChild(tagDiv2);
 
       let tagP1 = document.createElement('p');
-      tagP1.innerHTML = 'Adicionado tag p como filho do div criado no passo 3';
+      tagP1.innerHTML = "Adicionado tag p como filho do div criado no passo 3";
       tagDiv2.appendChild(tagP1);
 
       let tagDiv3 = document.createElement('div');
@@ -87,13 +87,13 @@
       img1.src = 'https://picsum.photos/200';
       tagDiv3.appendChild(img1);
 
-      let listaUL = document.createElement('ul');
-      listaUL.appendChild(tagDiv4);
+      let listaUl = document.createElement('ul');
+      tagDiv4.appendChild(listaUl);
       let arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
       for (let i in arrayNumbers) {
-      let listaLi = document.createElement('li');
-      listaLi.innerHTML = arrayNumbers[i];
-      listaUl.appendChild(listaLi);
+        let listaLi = document.createElement('li');
+        listaLi.innerHTML = arrayNumbers[i];
+        listaUl.appendChild(listaLi);
       }
 
       for (let j = 1; j <= 3; j += 1) {
@@ -112,8 +112,7 @@
         descricao3TagsH3[i].className = 'description';
       };
 
-      let removediv3 = document.getElementsByClassName('left-content')[0];
-      tagDiv3.removeChild(removediv3);
+      tagDiv1.removeChild(tagDiv3);
 
       let centralizandoDiv = document.getElementsByClassName('right-content')[0];
       centralizandoDiv.style.marginRight='auto';
@@ -121,8 +120,8 @@
       let corfundoTagDiv2 = document.getElementsByClassName('center-content')[0];
       corfundoTagDiv2.parentNode.style.backgroundColor = 'green';
 
-      listaUL.lastChild.remove();
-      listaUL.lastChild.remove();
+      listaUl.lastChild.remove();
+      listaUl.lastChild.remove();
 
     </script>
   </body>
