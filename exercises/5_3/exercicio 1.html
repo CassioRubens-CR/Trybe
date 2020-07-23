@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="utf-8" />
+  <title></title>
 </head>
+
 <body>
-  
+
+  <h1>Mad Libs</h1>
+
+  <ul>
+    <li>Noun: <input type="text" id="noun">
+    <li>Adjective: <input type="text" id="adjective">
+    <li>Someone's Name: <input type="text" id="person">
+  </ul>
+
+  <button id="lib-button">Lib it!</button>
+
+  <div id="story"><p>"Pamela really likes pink cucumbers"</p></div>
+
+  <script>
+    let botao = document.getElementById("lib-button");
+    botao.addEventListener('click', function (makeMadLib) {
+      alert("Você Clicou")
+    })
+  </script>
+
+
 </body>
+
 </html>
