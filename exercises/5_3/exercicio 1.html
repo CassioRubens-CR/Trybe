@@ -18,13 +18,21 @@
 
   <button id="lib-button">Lib it!</button>
 
-  <div id="story"><p>"Pamela really likes pink cucumbers"</p></div>
+  <div id="story"></div>
 
   <script>
+    function libIt() {
+      let idstory = document.getElementById("story");
+      let idperson = document.getElementById("person").value;
+      let idadjective = document.getElementById("adjective").value;
+      let idnoun = document.getElementById("noun").value;
+      idstory.innerHTML = " Hello World! " + idperson + " Esté cara é " + idadjective + " e " + idnoun;
+    }
     let botao = document.getElementById("lib-button");
-    botao.addEventListener('click', function (makeMadLib) {
-      alert("Você Clicou")
-    })
+    botao.addEventListener('click', libIt, function() {
+      alert('Botão Acionado')
+    });
+    
   </script>
 
 
