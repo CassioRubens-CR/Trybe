@@ -16,7 +16,7 @@
     <li>Someone's Name: <input type="text" id="person">
   </ul>
 
-  <button id="lib-button">Lib it!</button>
+  <button id="lib-button"></button>
 
   <div id="story"></div>
 
@@ -28,13 +28,17 @@
       let idnoun = document.getElementById("noun").value;
       idstory.innerHTML = " Hello World! " + idperson + " Esté cara é " + idadjective + " e " + idnoun;
     }
-    let botao = document.getElementById("lib-button");
-    botao.addEventListener('click', libIt, function() {
-      alert('Botão Acionado')
-    });
     
-  </script>
+    let novBotao = document.querySelector("#lib-button");
+    let button1 = document.createElement('button1');
+    button1.textContent = "Botão";
+    button1.addEventListener('click', function () {
+      alert('Botão Acionado');
+      libIt();
+    });
+    novBotao.appendChild(button1);
 
+  </script>
 
 </body>
 
