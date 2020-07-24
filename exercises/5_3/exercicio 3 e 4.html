@@ -7,13 +7,9 @@
   <link rel="stylesheet" type="text/css" href="http://nptcstudents.co.uk/andrewg/jsweb/css/reset.css" />
   <link rel="stylesheet" type="text/css" href="http://nptcstudents.co.uk/andrewg/jsweb/css/jsweb.css" />
 
-
-
   <!-- JavaScript could go up here -->
   <!-- JavaScript could go up here -->
   <!-- JavaScript could go up here -->
-
-
 
 </head>
 
@@ -47,10 +43,35 @@
       </p>
 
       <script language="javascript" type="text/javascript">
-				< !--JavaScript for task 3 here-- >
-      < !--JavaScript for task 3 here-- >
-      < !--JavaScript for task 3 here-- >
+
+        let botao = document.getElementsByClassName('exampleblock')[0];
+        let btn = document.createElement('button');
+        let lbl = document.createTextNode("click me");
+        btn.appendChild(lbl);
+        btn.onclick = function () {
+          alert("Você clicou no botão");
+        }
+        botao.appendChild(btn);
+
+        let gamePrice = 39.99;
+        let discount = 0.20;
+
+        function teste() {
+          let result = gamePrice * discount;
+          alert("£ " + result + " off!");
+        };
+ 
+        let trocarimagem = document.getElementById("imagem1");
+        trocarimagem.onMouseOver = function() {
+          trocarimagem.src = Imagem1.png;
+        }
+
+
+
       </script>
+
+      <button onclick="teste()">GamePrice with Discount</button>
+
 
       <p>You may want to consider using JavaScript's built in <a href="http://www.w3schools.com/js/js_obj_math.asp"
           target="_blank">Maths object</a> to round the number you get in your result to a more reasonable one.</p>
@@ -67,7 +88,7 @@
         </li>
       </ol>
 
-
+      <img class="imagem1" src="Imagem1.png" alt="Imagem1" width="100%"></img>
 
     </div>
   </div>
