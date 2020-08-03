@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Currículo</title>
+  <link rel="stylesheet" href="CSS/bulma.min.css">
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+  <h1 class="title">Formulário de Currículo</h1>
+
+  <Form action="" method="GET" class="cadastroCurriculo">
+    <div class="qualification">
+      <fieldset>
+        <div class="field">
+          <div class="control">
+            <label class="label" for="name">Nome</label>
+            <input class="input" type="text" name="name" maxlength="40" id="name" class="campo1" placeholder="Digite seu nome"
+              required>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <label class="label" for="email">E-mail</label>
+            <input class="input" type="email" name="email" maxlength="50" id="email" class="campo1" placeholder="Digite seu e-mail"
+              required>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <label class="label" for="cpf">CPF</label>
+            <input class="input" type="text" name="cpf" maxlength="11" id="cpf" class="campo1" placeholder="Digite seu CPF" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <label class="label" for="address">Endereço</label>
+            <input class="input" type="text" name="address" maxlength="200" id="address" class="campo1"
+              placeholder="Digite seu endereço" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <label class="label" for="city">Cidade</label>
+            <input class="input" type="text" name="city" maxlength="28" id="city" class="campo1" placeholder="Digite sua cidade"
+              required>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <label class="label" for="state">Estado</label>
+            <select name="state" id="state" class="campo1" required>
+              <option value=""></option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <fieldset>
+              <legend>Residência</legend>
+              <input class="radio" type="radio" name="residence" id="residenceHouse" value="House">
+              <label class="" for="residenceHouse">Casa</label>
+              <input class="radio" type="radio" name="residence" id="residenceAp" value="Apartment">
+              <label class="" for="residenceAp">Apartamento</label>
+            </fieldset>
+          </div>
+        </div>
+
+      </fieldset>
+
+    </div>
+  </Form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
