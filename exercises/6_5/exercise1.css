@@ -40,5 +40,6 @@ figure {
   * {
     background-color: rgb(214, 248, 207);
     font-size: 0,9em;
+    margin: 20px;
   }
 }
