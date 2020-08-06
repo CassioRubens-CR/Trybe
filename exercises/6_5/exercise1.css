@@ -27,5 +27,6 @@ figure {
   * {
     background-color: rgb(218, 218, 250);
     font-size: 1em;
+    margin: 25px;
   }
 }
