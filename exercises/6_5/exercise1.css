@@ -29,4 +29,9 @@ figure {
     font-size: 1em;
     margin: 25px;
   }
+
+  figure {
+    max-width: 50%;
+    display: inline-block; 
+  }
 }
