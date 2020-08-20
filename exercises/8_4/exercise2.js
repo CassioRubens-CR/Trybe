@@ -6,9 +6,9 @@ const assert = require('assert')
 // escreva sum abaixo
 
 const sum = (...elementVariable) => {
-    let totalSum = 0;
-    for (numbers of elementVariable) totalSum += numbers;
-    return totalSum
+  let totalSum = 0;
+  for (numbers of elementVariable) totalSum += numbers;
+  return totalSum
 }
 console.log(sum());
 
