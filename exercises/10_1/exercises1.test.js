@@ -9,6 +9,21 @@ const sum = require('./exercises1');
 test('exercicio1', () => {
   expect(typeof sum).toBe('function');
 })
+
+test('retorno de sum(4, 5)', () => {
+  expect(sum(4, 5)).toBe(9);
+})
+
+test('retorno de sum(4, 5)', () => {
+  expect(sum(0, 0)).toBe(0);
+})
+
+test('retorno de sum(4, 5)', () => {
+  expect(() => {
+    sum(4, "5");
+  }).toThrow('parameters must be numbers');
+})
+
 // implemente seus testes aqui
 // assert.strictEqual(sum(4, 5), 9);
 // assert.strictEqual(sum(0, 0), 0);
