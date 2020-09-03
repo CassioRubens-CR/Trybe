@@ -7,23 +7,23 @@
 const myRemove = require('./exercises2');
 
 test('exercicio2', () => {
-    expect(typeof myRemove).toBe('function');
+  expect(typeof myRemove).toBe('function');
 })
 
 test('chamada myRemove([1, 2, 3, 4], 3)', () => {
-    expect(myRemove([1, 2, 3, 4], 3)).toBe([1, 2, 4]);
+  expect(myRemove([1, 2, 3, 4], 3)).toMatchObject([1, 2, 4]);
 })
+
+test('chamada myRemove([1, 2, 3, 4], 3)', () => {
+  expect(myRemove([1, 2, 3, 4], 3)).not.toBe([1, 2, 3, 4]);
+})
+
 // implemente seus testes aqui
 // assert.strictEqual(typeof myRemove, 'function');
 // assert.deepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 4]);
 // assert.deepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 3, 4]); //Apresernta erro por não excluir o 3
 // const parameter = [5, 6, 7, 8];
 // myRemove(parameter, 5);
-
-// test('exercicio2', () => {
-//     expect(myRemove(parameter)).toBe('object');
-// })
-
 // assert.deepStrictEqual(parameter, [5, 6, 7, 8]);
 // assert.deepStrictEqual(myRemove([1, 2, 3, 4], 5), [1, 2, 3, 4]);
 
