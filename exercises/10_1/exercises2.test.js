@@ -10,12 +10,18 @@ test('exercicio2', () => {
   expect(typeof myRemove).toBe('function');
 })
 
-test('chamada myRemove([1, 2, 3, 4], 3)', () => {
+test('chamada myRemove retorna o array esperado', () => {
   expect(myRemove([1, 2, 3, 4], 3)).toMatchObject([1, 2, 4]);
 })
 
-test('chamada myRemove([1, 2, 3, 4], 3)', () => {
+test('chamada myRemove retorna o array esperado não retorna o array', () => {
   expect(myRemove([1, 2, 3, 4], 3)).not.toBe([1, 2, 3, 4]);
+})
+
+test('array passado por parâmetro não sofreu alterações', () => {
+  const parameter = [5, 6, 7, 8];
+  myRemove(parameter, 5);
+  expect(parameter).toEqual([5, 6, 7, 8]);
 })
 
 // implemente seus testes aqui
@@ -26,5 +32,4 @@ test('chamada myRemove([1, 2, 3, 4], 3)', () => {
 // myRemove(parameter, 5);
 // assert.deepStrictEqual(parameter, [5, 6, 7, 8]);
 // assert.deepStrictEqual(myRemove([1, 2, 3, 4], 5), [1, 2, 3, 4]);
-
-//assert.strictEqual(myRemove[1, 2, 3, 4], 3);
+// assert.strictEqual(myRemove[1, 2, 3, 4], 3);
